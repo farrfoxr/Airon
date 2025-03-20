@@ -1,0 +1,109 @@
+/* PredictPage.css */
+.predict-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative; /* Enable absolute positioning for ::before */
+  padding: 20px;
+  z-index: 1; /* Keep content above the background */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.predict-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/cloudsBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(5px); /* Apply the blur here */
+  z-index: -1; /* Send it behind the content */
+}
+
+
+.predict-card {
+  max-width: 650px; /* Increased width */
+  width: 100%;
+  padding: 30px; /* Reduced padding */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.816);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.predict-title {
+  font-size: 2rem; /* Slightly smaller */
+  color: #2c3e50;
+  margin-bottom: 20px; /* Reduced margin */
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.predict-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+.predict-form label {
+  display: block;
+  margin-bottom: 5px; /* Reduced margin */
+  color: #2b97e0;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.predict-input {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem; /* Smaller font */
+  transition: border-color 0.3s ease;
+}
+
+.predict-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.predict-submit-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Reduced padding */
+  border-radius: 8px;
+  font-size: 0.9rem; /* Smaller font */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.predict-submit-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.predict-result {
+  margin-top: 20px; /* Reduced margin */
+  padding: 10px; /* Reduced padding */
+  background-color: rgba(52, 152, 219, 0.1);
+  border-radius: 8px;
+}
+
+.predict-result h2 {
+  color: #2c3e50;
+  font-size: 1.2rem; /* Smaller font */
+}

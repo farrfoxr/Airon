@@ -1,0 +1,72 @@
+.city-pollution-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('/cloudsBackground.jpg'); /* Added placeholder background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Added to create parallax-like effect */
+  padding: 20px;
+}
+
+.city-pollution-card {
+  background: rgba(255, 255, 255, 0.9); /* Added semi-transparent background */
+  border-radius: 16px; /* Increased border-radius to match other pages */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  backdrop-filter: blur(10px); /* Added blur effect */
+}
+
+.city-pollution-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Updated color to match other pages */
+  font-size: 2rem; /* Added font size */
+  font-weight: 700; /* Added font weight */
+}
+
+/* Rest of the CSS remains the same */
+.city-pollution-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #34495e; /* Slightly updated color */
+}
+
+.city-pollution-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Increased border-radius */
+  font-size: 16px;
+}
+
+.city-pollution-submit-button {
+  background-color: #3498db; /* Updated to match other pages */
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Increased padding */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.city-pollution-submit-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Other existing styles remain unchanged */
